@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+	    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+	    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+	    <property name="hibernate.connection.url">jdbc:postgresql://ec2-54-75-251-84.eu-west-1.compute.amazonaws.com:5432/d8cmte41fg46dq</property>
+        <property name="hibernate.connection.username">unwpqiosypvkhu</property>
+        <property name="hibernate.connection.password">653fc2f176aedb572434ae0a1bc14c326b7b125d16d9fed9efb64690cac060e6</property>
+	    
+		<property name="connection_pool_size">1</property>
+		<property name="hbm2ddl.auto">create</property>
+        <property name="show_sql">true</property>     
+        
+        <property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+        <mapping class="fr.alteca.mobithinkvelo.model.Event" />
+        <mapping class="fr.alteca.mobithinkvelo.model.RollingPoint" />
+        <mapping class="fr.alteca.mobithinkvelo.model.Trajet" />
+    </session-factory>
+
+</hibernate-configuration>
+<!-- 
+
+
+<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/mobithink-velo</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">mobithink</property>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+	    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+	    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+	    <property name="hibernate.connection.url">jdbc:postgresql://ec2-54-75-251-84.eu-west-1.compute.amazonaws.com:5432/d8cmte41fg46dq</property>
+        <property name="hibernate.connection.username">unwpqiosypvkhu</property>
+        <property name="hibernate.connection.password">653fc2f176aedb572434ae0a1bc14c326b7b125d16d9fed9efb64690cac060e6</property>
+		<property name="connection_pool_size">1</property>
+		<property name="hbm2ddl.auto">create</property>
+        <property name="show_sql">true</property>     
+        
+        <property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+        <mapping class="fr.alteca.mobithinkvelo.model.Event" />
+        <mapping class="fr.alteca.mobithinkvelo.model.RollingPoint" />
+        <mapping class="fr.alteca.mobithinkvelo.model.Trajet" />
+    </session-factory>
+
+</hibernate-configuration> -->
